@@ -58,3 +58,21 @@ data[srazky])
 
 __________________________________________________________________________________________________________________________________________________________________
 __________________________________________________________________________________________________________________________________________________________________
+
+01 suma srazek kumulativne = 
+-- krok3: Funkce SUMX() sčítá sloupec srazky tabulky vrácené
+-- funkcí FILTER()
+SUMX(
+    --krok2: Tabulku vrácenou funkcí ALL() filtrujeme přes sloupečky
+    -- roka  mesic
+    FILTER(
+        -- krok1: Vytváříme kopii tabulky data, kteoru následně (tuto kopii)
+        -- zbavujeme filtrů
+        ALL(data),
+    --krok2: Hodnota ve sloupečku rok kopie tabulky data se rovná
+    -- maximální hodnotě ze sloupečku rok originálu, který je stále
+    -- zafiltrován vizuálem
+    data[rok] = MAX(data[rok])
+    -- krok2: dtto
+    && data[mesic] <= MAX(data[mesic])),
+data[srazky])
