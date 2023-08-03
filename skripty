@@ -1,4 +1,6 @@
-01 suma srazek = 
+SCENARE:
+
+scenar1 suma srazek = 
 
 -- scenar1: Respektuji filtry vizualu, zadne nerusim, nepridavam. Pouzivam zakladni agregacni funkce
 -- typu SUM(),MIN()
@@ -6,7 +8,7 @@ SUM(data[srazky])
 
 __________________________
 
-02 suma srazek ruzyne = 
+scenar2 suma srazek ruzyne = 
 -- suma srazek v danem roce v lokalite ruzyne
 
 -- scenar2: Respektuji filtry vizualu a nastavuji dalsi, tj. pouziji kombinaci funkci
@@ -24,7 +26,7 @@ SUMX(
     
     ___________________________________
     
-    03 suma razek vsechny roky = 
+scenar3 suma razek vsechny roky = 
 
 -- scenar3: Rusim filtry vizualu, zadne nenastavuji, tj. pouziji kombinaci funkci
 -- SUMX(ALL()),MINX(ALL()) apod.
@@ -39,7 +41,7 @@ data[srazky])
 _________________________________________________
 
 
-04 suma srazek rok 2000 = 
+scenar4 suma srazek rok 2000 = 
 
 -- scenar4: Rusim filtry vizualu a nastavuji si vlastni, pouziji kombinaci funkci
 -- SUMX(FILTER(ALL())), MINX(FILTER(ALL())) apod.
@@ -54,4 +56,5 @@ SUMX(
 --krok4: Funkce SUMX() agreguje sloupec srazky tabulky vracene funkci FILTER()
 data[srazky])
 
-_______________________________
+__________________________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________________________________________
