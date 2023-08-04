@@ -88,3 +88,15 @@ VAR max_teplota = MAX(data[maximalni_teplota])
 return 
 if(
     max_teplota = max_teplota_ruzyne,"ano","ne")
+__________________________________________________________________
+
+cvb02 datum maximálnich srazek = 
+-- v danem roce, mesici, lokalite ruzyne = 
+    MAXX(
+        FILTER(data,
+        data[lokalita] = "RUZYNE"
+        && data[srazky] = MAX(data[srazky])
+        ),
+    data[datum])
+
+
