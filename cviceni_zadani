@@ -8,6 +8,9 @@ cv03 minimalni datum ruzyne: Minimální datum v daném roce, měsíci, lokalit�
 cv04 minimalni datum rok: Minimální datum v daném roce bez ohledu na měsíc
 cv05 minimalni datum predchozi rok: Minimální datum ve stejném měsíci předchozího roku
 
+cvb01 nejteplejsi lokalita ruzyne  = Byla RUZYNE v daném roce a měsíci nejteplejší lokalitou, tj. lokalitou s maximalni data[maximalni_teplota]? 
+cvb02 datum maximálních srazek = Kdy naposledy napadlo v daném roce a měsíci v RUZYNE nejvíce srážek za daný měsíc a rok?
+
 cv06 suma srazek: Suma srážek v daném roce a měsíci
 cv07 suma srazek predchozi rok: Suma srážek ve stejném měsíci předchozího roku
 cv08 suma srazek kumulativne: Suma srážek v daném roce, v měsících rovnající se či menší danému měsíci (tj. YTD)
