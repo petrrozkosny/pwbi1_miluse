@@ -76,3 +76,15 @@ SUMX(
     -- krok2: dtto
     && data[mesic] <= MAX(data[mesic])),
 data[srazky])
+_________________________________________________________________
+
+cvb01 nejteplejsi lokalita ruzyne = 
+VAR max_teplota_ruzyne = 
+MAXX(
+    FILTER(data,
+    data[lokalita] = "RUZYNE"),
+data[maximalni_teplota])
+VAR max_teplota = MAX(data[maximalni_teplota])
+return 
+if(
+    max_teplota = max_teplota_ruzyne,"ano","ne")
